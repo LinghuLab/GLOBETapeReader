@@ -1,6 +1,6 @@
 # GLOBE-Tapereader Analysis Pipeline
 
-End-to-end pipeline for large-scale analysis of CytoTape proteins from ND2 confocal hyperstacks. Refactored from the monolithic `fiber_pipeline.py` into a modular structure mirroring the [TapeReader](../TapeReader) repository.
+End-to-end pipeline for large-scale analysis of GLOBE from ND2 confocal hyperstacks. Refactored from the monolithic `fiber_pipeline.py` into a modular structure mirroring the [TapeReader](../TapeReader) repository.
 
 ## Key Differences from TapeReader
 
