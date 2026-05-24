@@ -1,0 +1,43 @@
+# Paths
+nd2_path: null  # set per run, e.g. /projects/weilab/dataset/barcode/2026/umich/A1-2003.nd2
+tile_dir: "tiles"
+fiber_seg_dir: "fiber_seg"
+cache_dir: "cache"
+output_dir: "outputs"
+
+# Voxel size in nm (Z, Y, X)
+anisotropy: [400.0, 162.9, 162.9]
+
+# Channel profile: standard, reordered, fos-gfp
+profile: standard
+
+num_cpus: 16
+num_gpus: 1
+
+fiber_segmentation:
+  batch_size: 64
+  checkpoint: null  # path to model checkpoint
+  base_yaml: null   # path to base inference config
+
+cell_segmentation:
+  model_type: "vit_b_lm"
+
+skeletonize_fibers:
+  manual_z_scale: 0.33
+  percentile_fit: [0.1, 0.9]
+  num_centerline_points: 1000
+  spline_smoothing: null
+  extrapolate: [-0.2, 1.2]
+
+normalize_signals:
+  gaussian_filter_ratio: 0.01
+  midpoint_range: [0.3, 0.7]
+  scale_range: [-0.2, 0.2]
+  num_trials: 100
+  smooth_sigma_ratio: 0.02
+
+validate_fibers:
+  thres_length_um: 8.0
+  thres_pca_ratio: 0.0
+  thres_mean_soma: 0.0
+  one_per_soma: false
