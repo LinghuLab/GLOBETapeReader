@@ -1,6 +1,11 @@
 # GLOBE Tape Reader pipeline
 
-End-to-end pipeline for large-scale, brain-wide analysis of GLOBE recording from microscopy images.
+End-to-end pipeline for large-scale, brain-wide analysis of microscopy images from GLOBE recording.
+
+Citation:
+"Simultaneous brain-wide single-cell recording resolves spatiotemporal memory architecture"
+Dongqing Shi, Yongjie Hou, Yixiao Yan, Tian-hao Zhang, William C. Joesten, Peng Liu, Yixuan Wang, Mehul Gautam, Jormay Lim, Lirong Zheng, Jonathan Gould, BumJin Ko, Xiaoman Niu, Mou-Chi Cheng, Jung-Chien Hsieh, Florian Levet, Dawen Cai, Anne Draelos, Denise J. Cai, Donglai Wei, Changyang Linghu
+bioRxiv 2026.05.21.726120; doi: https://doi.org/10.64898/2026.05.21.726120
 
 ## Key Features
 
