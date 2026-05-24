@@ -4,9 +4,9 @@ End-to-end pipeline for large-scale, brain-wide analysis of microscopy images fr
 
 Citation: "Simultaneous brain-wide single-cell recording resolves spatiotemporal memory architecture", Dongqing Shi, Yongjie Hou, Yixiao Yan, Tian-hao Zhang, William C. Joesten, Peng Liu, Yixuan Wang, Mehul Gautam, Jormay Lim, Lirong Zheng, Jonathan Gould, BumJin Ko, Xiaoman Niu, Mou-Chi Cheng, Jung-Chien Hsieh, Florian Levet, Dawen Cai, Anne Draelos, Denise J. Cai, Donglai Wei, Changyang Linghu, bioRxiv 2026.05.21.726120; doi: https://doi.org/10.64898/2026.05.21.726120
 
-## Key Features
+## New Features
 
-| Feature | TapeReader | GLOBE-Tapereader |
+| Feature | TapeReader | GLOBE Tape Reader |
 |---|---|---|
 | **Input** | Pre-split `.tif` files `(C,Z,Y,X)` | `.nd2` files; pipeline extracts tiles |
 | **Fiber seg** | pytorch_connectomics inline + CLAHE + BCS watershed | MedNeXt model with built-in post-processing |
@@ -21,7 +21,7 @@ Citation: "Simultaneous brain-wide single-cell recording resolves spatiotemporal
 ## Directory Structure
 
 ```
-GLOBE-Tapereader/
+GLOBETapeReader/
 ├── config.yaml                          # Pipeline parameters
 ├── justfile                             # Task runner
 ├── README.md
