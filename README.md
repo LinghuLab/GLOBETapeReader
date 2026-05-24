@@ -74,20 +74,6 @@ All parameters are in `config.yaml`. Key settings:
 - **normalize_signals**: Midpoint detection range and Optuna trials
 - **validate_fibers**: Quality thresholds
 
-## Channel Profiles
-
-### standard (A1-2003.nd2, hippocampus data)
-- Ch0: 405nm — nissl/DAPI (neuron labeling)
-- Ch1: 488nm — fiber signal (segmentation)
-- Ch2: 561nm — cfos
-- Ch3: 647nm — timestamp (symmetric)
-
-### fos-gfp (Fos-GFP data)
-- Ch0: 405nm — nissl/DAPI
-- Ch1: GFP (nucleus + cytosol)
-- Ch2: cfos
-- Ch3: fiber signal (moved)
-
 ## Output
 
 Per-tile NPZ files with flat arrays:
