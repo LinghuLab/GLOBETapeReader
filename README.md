@@ -6,7 +6,7 @@ Citation: "Simultaneous brain-wide single-cell recording resolves spatiotemporal
 
 ## New Features
 
-| Feature | TapeReader | GLOBE Tape Reader |
+| Feature | Tape Reader | GLOBE Tape Reader |
 |---|---|---|
 | **Input** | Pre-split `.tif` files `(C,Z,Y,X)` | `.nd2` files; pipeline extracts tiles |
 | **Fiber seg** | pytorch_connectomics inline + CLAHE + BCS watershed | MedNeXt model with built-in post-processing |
