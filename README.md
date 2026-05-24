@@ -1,8 +1,8 @@
-# GLOBE-Tapereader Analysis Pipeline
+# GLOBE Tape Reader pipeline
 
-End-to-end pipeline for large-scale analysis of GLOBE from ND2 confocal hyperstacks. Refactored from the monolithic `fiber_pipeline.py` into a modular structure mirroring the [TapeReader](../TapeReader) repository.
+End-to-end pipeline for large-scale, brain-wide analysis of GLOBE recording from microscopy images.
 
-## Key Differences from TapeReader
+## Key Features
 
 | Feature | TapeReader | GLOBE-Tapereader |
 |---|---|---|
@@ -80,5 +80,5 @@ Per-tile NPZ files with flat arrays:
 - `fiber_ids`, `fiber_length_um`, `pca_linearity`, `z_span_um`
 - `parent_cell_id`, `centroid_{z,y,x}_um`, `volume_um3`
 - `midpoint_raw`, `midpoint_smooth`, `pearson_r_*`
-- `dapi`, `fiber`, `cfos`, `timestamp` — (N, 1000) profiles
+- `Nissl`, `structural monomer`, `signal monomer`, `timestamp monomer` — (N, 1000) profiles
 - `*_smooth_split` — profiles recentered at smoothed midpoint
