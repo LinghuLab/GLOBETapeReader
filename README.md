@@ -2,7 +2,7 @@
 
 End-to-end pipeline for large-scale, brain-wide analysis of microscopy images from GLOBE recording.
 
-Citation: "Simultaneous brain-wide single-cell recording resolves spatiotemporal memory architecture", Dongqing Shi, Yongjie Hou, Yixiao Yan, Tian-hao Zhang, William C. Joesten, Peng Liu, Yixuan Wang, Mehul Gautam, Jormay Lim, Lirong Zheng, Jonathan Gould, BumJin Ko, Xiaoman Niu, Mou-Chi Cheng, Jung-Chien Hsieh, Florian Levet, Dawen Cai, Anne Draelos, Denise J. Cai, Donglai Wei, Changyang Linghu, bioRxiv 2026.05.21.726120; doi: https://doi.org/10.64898/2026.05.21.726120
+More about GLOBE (simultaneous brain-wide single-cell recording): https://www.biorxiv.org/content/10.64898/2026.05.21.726120v1
 
 ## New Features
 
@@ -84,3 +84,15 @@ Per-tile NPZ files with flat arrays:
 - `midpoint_raw`, `midpoint_smooth`, `pearson_r_*`
 - `Nissl`, `structural monomer`, `signal monomer`, `timestamp monomer` — (N, 1000) profiles
 - `*_smooth_split` — profiles recentered at smoothed midpoint
+
+## GLOBE dataset
+
+GLOBE recording dataset from mouse subject Subj-BW-01: https://doi.org/10.5281/zenodo.20241204
+
+## Citation: 
+
+"Simultaneous brain-wide single-cell recording resolves spatiotemporal memory architecture"
+
+Dongqing Shi, Yongjie Hou, Yixiao Yan, Tian-hao Zhang, William C. Joesten, Peng Liu, Yixuan Wang, Mehul Gautam, Jormay Lim, Lirong Zheng, Jonathan Gould, BumJin Ko, Xiaoman Niu, Mou-Chi Cheng, Jung-Chien Hsieh, Florian Levet, Dawen Cai, Anne Draelos, Denise J. Cai, Donglai Wei, Changyang Linghu
+
+bioRxiv 2026.05.21.726120; doi: https://doi.org/10.64898/2026.05.21.726120
