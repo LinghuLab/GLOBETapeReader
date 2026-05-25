@@ -9,7 +9,7 @@ Citation: "Simultaneous brain-wide single-cell recording resolves spatiotemporal
 | Feature | Tape Reader | GLOBE Tape Reader |
 |---|---|---|
 | **Trained on** | Microscopy images from mouse hippocampus only | Microscopy images from diverse mouse brain regions |
-| **Input** | Pre-split `.tif` files `(C,Z,Y,X)` | `.nd2` files; pipeline extracts tiles |
+| **Input** | Pre-split `.tif` files `(C,Z,Y,X)` from raw `.nd2` images | Raw `.nd2` images; pipeline automatically extracts tiles |
 | **Fiber seg** | pytorch_connectomics inline + CLAHE + BCS watershed | MedNeXt model with built-in post-processing |
 | **Cell seg** | micro-sam in same env | micro-sam in separate `microsam` env |
 | **Signal extraction** | Per-fiber interpn | Vectorized batched interpn with OOB clamping |
@@ -74,7 +74,7 @@ All parameters are in `config.yaml`. Key settings:
 - **profile**: Specify optical channels for `Nissl`, `structural monomer`, `signal monomer`, and `timestamp monomer` in microscopy images
 - **skeletonize_fibers**: Spline fitting parameters
 - **normalize_signals**: Midpoint detection range and Optuna trials
-- **validate_fibers**: Quality thresholds
+- **validate_fibers**: Quality check thresholds
 
 ## Output
 
