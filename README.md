@@ -8,6 +8,7 @@ Citation: "Simultaneous brain-wide single-cell recording resolves spatiotemporal
 
 | Feature | Tape Reader | GLOBE Tape Reader |
 |---|---|---|
+| **Trained on** | Microscopy images from mouse hippocampus only | Microscopy images from diverse mouse brain regions |
 | **Input** | Pre-split `.tif` files `(C,Z,Y,X)` | `.nd2` files; pipeline extracts tiles |
 | **Fiber seg** | pytorch_connectomics inline + CLAHE + BCS watershed | MedNeXt model with built-in post-processing |
 | **Cell seg** | micro-sam in same env | micro-sam in separate `microsam` env |
@@ -15,7 +16,6 @@ Citation: "Simultaneous brain-wide single-cell recording resolves spatiotemporal
 | **Midpoint detection** | Single-pass Optuna `[0.45, 0.55]` | Two-pass: coarse grid `[0.3, 0.7]` + Optuna fine-tune |
 | **Normalization** | Raw midpoint only | Raw + smoothed midpoint with 3 Pearson r metrics |
 | **Validation** | Length, PCA, soma, one-per-soma | Same + divergent spline Z-span check |
-| **Channel profiles** | Fixed 4-channel mapping | Configurable: `standard`, `reordered`, `fos-gfp` |
 | **Export** | Nested dict NPZ | Flat array NPZ (analysis-ready) |
 
 ## Directory Structure
@@ -71,7 +71,7 @@ just everything A1 A1-2003
 All parameters are in `config.yaml`. Key settings:
 
 - **anisotropy**: Voxel size in nm `[Z, Y, X]` — from ND2 metadata
-- **profile**: Channel mapping (`standard`, `reordered`, `fos-gfp`)
+- **profile**: Specify optical channels for `Nissl`, `structural monomer`, `signal monomer`, and `timestamp monomer` in microscopy images
 - **skeletonize_fibers**: Spline fitting parameters
 - **normalize_signals**: Midpoint detection range and Optuna trials
 - **validate_fibers**: Quality thresholds
